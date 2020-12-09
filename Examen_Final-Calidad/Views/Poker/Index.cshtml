@@ -1,0 +1,167 @@
+﻿<h3>Puntaje mayor @ViewBag.puntajeMayor</h3>
+<h3>@ViewBag.mensaje</h3>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>#</th>
+            <th>Numero</th>
+            <th>Tipo</th>
+            <th>Codigo de usuario</th>
+            <th>Par</th>
+            <th>Doble Par</th>
+            <th>Trio</th>
+            <th>Poker</th>
+            <th>Escalera</th>
+            <th>Puntaje</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach(var item in ViewBag.user1)
+        {
+        <tr>
+            <td>@item.Id</td>
+            <td>@item.Digito</td>
+            <td>@item.Nombre</td>
+            <td>@item.IdUser</td>
+            @for(int i = 0; i<6; i++)
+            {
+                <td>@ViewBag.mano1[i]</td>
+            }
+        </tr>
+        }
+    </tbody>
+</table>
+
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>#</th>
+            <th>Numero</th>
+            <th>Tipo</th>
+            <th>Codigo de usuario</th>
+            <th>Par</th>
+            <th>Doble Par</th>
+            <th>Trio</th>
+            <th>Poker</th>
+            <th>Escalera</th>
+            <th>Puntaje</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in ViewBag.user2)
+        {
+        <tr>
+            <td>@item.Id</td>
+            <td>@item.Digito</td>
+            <td>@item.Nombre</td>
+            <td>@item.IdUser</td>
+            @for (int i = 0; i < 6; i++)
+            {
+                <td>@ViewBag.mano2[i]</td>
+            }
+        </tr>
+        }
+    </tbody>
+</table>
+
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>#</th>
+            <th>Numero</th>
+            <th>Tipo</th>
+            <th>Codigo de usuario</th>
+            <th>Par</th>
+            <th>Doble Par</th>
+            <th>Trio</th>
+            <th>Poker</th>
+            <th>Escalera</th>
+            <th>Puntaje</th>
+
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in ViewBag.user3)
+        {
+        <tr>
+            <td>@item.Id</td>
+            <td>@item.Digito</td>
+            <td>@item.Nombre</td>
+            <td>@item.IdUser</td>
+            @for (int i = 0; i < 6; i++)
+            {
+                <td>@ViewBag.mano3[i]</td>
+            }
+        </tr>
+        }
+    </tbody>
+</table>
+
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>#</th>
+            <th>Numero</th>
+            <th>Tipo</th>
+            <th>Codigo de usuario</th>
+            <th>Par</th>
+            <th>Doble Par</th>
+            <th>Trio</th>
+            <th>Poker</th>
+            <th>Escalera</th>
+            <th>Puntaje</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in ViewBag.user4)
+        {
+        <tr>
+            <td>@item.Id</td>
+            <td>@item.Digito</td>
+            <td>@item.Nombre</td>
+            <td>@item.IdUser</td>
+            @for (int i = 0; i < 6; i++)
+            {
+                <td>@ViewBag.mano4[i]</td>
+            }
+        </tr>
+        }
+    </tbody>
+</table>
+
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>#</th>
+            <th>Numero</th>
+            <th>Tipo</th>
+            <th>Codigo de usuario</th>
+            <th>Par</th>
+            <th>Doble Par</th>
+            <th>Trio</th>
+            <th>Poker</th>
+            <th>Escalera</th>
+            <th>Puntaje</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in ViewBag.user5)
+        {
+        <tr>
+            <td>@item.Id</td>
+            <td>@item.Digito</td>
+            <td>@item.Nombre</td>
+            <td>@item.IdUser</td>
+            @for (int i = 0; i < 6; i++)
+            {
+                <td>@ViewBag.mano5[i]</td>
+            }
+        </tr>
+        }
+    </tbody>
+</table>
